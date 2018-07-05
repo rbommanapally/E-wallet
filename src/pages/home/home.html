@@ -1,0 +1,51 @@
+<ion-content>
+    <ion-row>
+      <ion-col>
+        <div class="header"> 
+            <div class="logout">
+                    <button class="hidden-button" (click)="logout()">
+                    <img src="assets/images/logout.png"/>
+                    </button>
+            </div>
+            <ion-avatar class="avatar">
+                    <img src="assets/images/avatar.png">
+              </ion-avatar>
+            <br>    
+            <p class="username">{{userData.loggedInUserName}}</p>
+            <span>AED <b>{{userData.displayBalance}}</b><br><span>Total Balance</span></span>
+        </div>
+      </ion-col>
+    </ion-row>
+    <div class = "row responsive-sm">
+        
+        <div class = "col col-25">
+            <button class="hidden-button" (click)="deposit()">  
+                <img src="assets/images/deposit.png" />
+                <ion-label>Deposit</ion-label>
+            </button>
+        </div>
+        <div class = "col">
+            <button class="hidden-button" (click)="scanCode()">
+            <img src="assets/images/e-payment.png" />
+            <ion-label>Payment</ion-label>
+            </button>
+        </div> 
+     </div>    
+     
+     <div class = "row responsive-sm">
+        <div class = "col">
+                <button class="hidden-button" (click)="receive()">
+            <img src="assets/images/receive.png" />
+            <ion-label>Receive</ion-label>
+            </button>
+        </div>
+        <div class = "col">
+                <button class="hidden-button">
+            <img src="assets/images/withdraw.png" (click)="withdraw()"/>
+            <ion-label>With Draw</ion-label> 
+            </button> 
+        </div>
+     </div> 
+    
+</ion-content>
+ 

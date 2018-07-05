@@ -1,0 +1,75 @@
+page-home {
+.responsive-sm{
+    text-align:center;
+    margin-top:15%;
+}
+.responsive-sm .col{
+    background-color: #ffffff;
+    margin :0px 11px -48px 10px;
+    border-radius: 20px;
+    border:1px solid #aeaeae;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.08);
+}
+.header{
+background-image:linear-gradient(to top,color($colors, primarygradient) 30%,color($colors,primary) 70%);
+border:1px;
+text-align: center;
+height:250px;
+//background-image: url('../assets/images/landing_header.jpeg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+.header .title{
+margin-top: 10%;
+}
+.avatar{
+    position: relative;
+    left: 41%;
+    top: 12%;
+}
+.avatar img{
+    width:20%;
+}
+.balance{
+    font-size: 28px;
+    color:color($colors,white);
+    font-weight: bold;
+}
+
+.hidden-button{
+    height: 100%;
+    width: 100%;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    background-color: transparent;
+}
+.logout{
+    float: right;
+    margin: 3%;
+}
+.username{
+color:white;
+margin-top:3%;
+font-size:1.5em;
+}
+.userData{
+    margin-top:17%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.currency{
+    font-weight: 100;
+}
+.totalbalance{
+    font-size:10px;
+}
+span b{
+    font-size:4em;
+    color:color($colors,white);
+}
+span{
+    color:color($colors,white);
+    font-size:1em;
+}
+}
+ 

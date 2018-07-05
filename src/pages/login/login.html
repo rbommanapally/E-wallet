@@ -1,0 +1,46 @@
+<ion-content class="bg-ewallet">
+
+  <form (ngSubmit)="login()" #registerForm="ngForm">
+      <ion-row class="logo-box">
+          <ion-col>
+            <img class="rakbank-logo-header" src="assets/images/e-rakbank-logo.png" />
+          </ion-col>
+        </ion-row>
+        <ion-row class="wallet-box">
+            <ion-col>
+                <img class="login-header" src="assets/images/wallet_logo.png" />
+              </ion-col>
+        </ion-row>
+    <div padding class="login-block">
+
+      <ion-row>
+        <ion-col>
+          <ion-list>
+
+            <ion-item>
+              <ion-label>
+                <ion-icon name="person" class="form-input-icon"></ion-icon>
+              </ion-label>
+              <ion-input type="text" placeholder="Name" [(ngModel)]="userData.loggedInUser" name="userName"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>
+                <ion-icon name="md-lock" class="form-input-icon"></ion-icon>
+              </ion-label>
+              <ion-input type="password" placeholder="Password" [(ngModel)]="user.password" name="password"></ion-input>
+            </ion-item>
+
+
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <button ion-button class="wallet-button" type="submit" [disabled]="!registerForm.form.valid">Login</button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </form>
+</ion-content>
